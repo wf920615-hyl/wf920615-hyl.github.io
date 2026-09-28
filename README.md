@@ -1,25 +1,15 @@
 # Fei Wang Academic Homepage
 
-A static, bilingual academic homepage for Fei Wang.
+Personal academic homepage for Fei Wang, School of Mathematical Sciences, Qufu Normal University.
 
-## Local preview
+## GitHub Pages upload
+Upload these files directly to the repository root:
 
-Open `index.html` directly in a browser, or serve the folder with any local web server.
+- `index.html`
+- `style.css`
+- `script.js`
+- `portrait.png`
+- `wechat_qr.png`
+- `README.md`
 
-## Publish online
-
-This folder is ready for static hosting, including:
-- GitHub Pages
-- Netlify
-- Vercel
-- Cloudflare Pages
-- a university web server
-
-## Before public release
-
-Recommended additions:
-1. Portrait photo (replace the FW placeholder)
-2. Email and office address
-3. Google Scholar / ORCID links
-4. Optional full publication list / CV PDF
-5. Final check of award names and publication metadata
+Do **not** put the two PNG files inside an `assets` folder; the page now uses root-relative file names for easier maintenance.
