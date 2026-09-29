@@ -6,6 +6,15 @@
   <meta name="description" content="王飞（Fei Wang）个人学术主页，曲阜师范大学数学科学学院副教授、硕士生导师。研究方向包括网络化动力系统、分数阶系统、多智能体系统、反应扩散系统、强化学习与最优控制。" />
   <title>王飞 | Fei Wang — Academic Homepage</title>
   <link rel="stylesheet" href="style.css" />
+
+<style>
+.pub-subhead{margin:2rem 0 .8rem}.pub-subhead h4{margin:0 0 .35rem;font-size:1.2rem}.pub-subhead p{margin:0;color:var(--muted,#607080)}
+.full-head{margin-top:3rem}.pub-details{margin:1rem 0;border:1px solid rgba(50,90,140,.16);border-radius:14px;background:#fff;overflow:hidden}
+.pub-details summary{cursor:pointer;padding:1rem 1.15rem;font-weight:700;display:flex;align-items:center;gap:.55rem;background:rgba(230,241,252,.55)}
+.pub-details summary small{font-weight:600;color:#6a7b8d}.pub-details .pub-list{padding:1rem 1.4rem 1.2rem 2.8rem;margin:0}
+.pub-note{margin-top:1rem;color:var(--muted,#607080);font-size:.92rem}.selected-pubs{margin-bottom:1.25rem}
+
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -18,7 +27,7 @@
       <a href="#publications" data-zh="论文" data-en="Publications">论文</a>
       <a href="#teaching" data-zh="教学" data-en="Teaching">教学</a>
       <a href="#students" data-zh="学生" data-en="Students">学生</a>
-      <a href="#notes" data-zh="随笔" data-en="Notes">随笔</a>
+      <a href="#notes" data-zh="动态" data-en="News & Notes">动态</a>
       <a href="#resources" data-zh="资源" data-en="Resources">资源</a>
     </nav>
     <div class="nav-actions">
@@ -32,24 +41,32 @@
 <section id="home" class="hero section">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow">Academic Homepage</div>
+      <div class="eyebrow">Fei Wang · Academic Homepage</div>
       <h1><span data-zh="王飞" data-en="Fei Wang">王飞</span><span class="dot">.</span></h1>
       <h2 data-zh="副教授 · 硕士生导师" data-en="Associate Professor · Master Supervisor">副教授 · 硕士生导师</h2>
-      <p class="affiliation" data-zh="曲阜师范大学 · 数学科学学院" data-en="School of Mathematical Sciences · Qufu Normal University">曲阜师范大学 · 数学科学学院</p>
-      <p class="lead" data-zh="主要从事网络化动力系统的分析与控制、强化学习与最优控制研究，重点关注复杂动态网络、多智能体系统、分数阶动力系统和反应扩散系统。" data-en="Research on analysis and control of networked dynamical systems, reinforcement learning, and optimal control, with emphasis on complex networks, multi-agent systems, fractional-order systems, and reaction-diffusion systems.">主要从事网络化动力系统的分析与控制、强化学习与最优控制研究，重点关注复杂动态网络、多智能体系统、分数阶动力系统和反应扩散系统。</p>
-      <div class="tag-list"><span>Networked Systems</span><span>Fractional-Order Systems</span><span>Multi-Agent Systems</span><span>Boundary Control</span><span>Reinforcement Learning</span><span>Optimal Control</span></div>
+      <p class="affiliation" data-zh="曲阜师范大学数学科学学院" data-en="School of Mathematical Sciences, Qufu Normal University">曲阜师范大学数学科学学院</p>
+      <p class="research-focus" data-zh="网络化动力系统的分析与控制 · 强化学习与最优控制" data-en="Analysis & Control of Networked Dynamical Systems · Reinforcement Learning & Optimal Control">网络化动力系统的分析与控制 · 强化学习与最优控制</p>
+      <p class="lead" data-zh="研究涉及复杂动态网络、多智能体系统、分数阶动力系统与反应扩散系统，关注同步与一致性、边界控制以及具有输入约束和时滞的智能优化控制问题。" data-en="Research interests include complex dynamical networks, multi-agent systems, fractional-order systems and reaction-diffusion systems, with emphasis on synchronization and consensus, boundary control, and intelligent optimal control under input constraints and delays.">研究涉及复杂动态网络、多智能体系统、分数阶动力系统与反应扩散系统，关注同步与一致性、边界控制以及具有输入约束和时滞的智能优化控制问题。</p>
+      <div class="tag-list"><span>Dynamic Networks</span><span>Multi-Agent Systems</span><span>Fractional-Order Systems</span><span>Reaction-Diffusion Systems</span><span>Reinforcement Learning</span><span>Optimal Control</span></div>
       <div class="hero-actions">
         <a class="btn primary" href="#about" data-zh="个人简介" data-en="Biography">个人简介</a>
+        <a class="btn ghost" href="#publications" data-zh="代表性论文" data-en="Selected Publications">代表性论文</a>
         <button class="btn ghost" id="bioBtn" data-zh="快速简介" data-en="Quick Bio">快速简介</button>
-        <a class="btn ghost" href="https://scholar.google.com/citations?user=Hgl_O2YAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a class="btn ghost" href="quick-bio.html" target="_blank" rel="noopener" data-zh="会议简介 ↗" data-en="Conference Bio ↗">会议简介 ↗</a>
+        <a class="btn ghost" href="cv.html" target="_blank" rel="noopener" data-zh="学术简历 ↗" data-en="Academic CV ↗">学术简历 ↗</a>
+      </div>
+      <div class="hero-links" aria-label="Academic profiles">
+        <a href="mailto:fei_9206@qfnu.edu.cn">fei_9206@qfnu.edu.cn</a>
+        <a href="https://scholar.google.com/citations?user=Hgl_O2YAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="https://orcid.org/0000-0002-2952-4911" target="_blank" rel="noopener">ORCID ↗</a>
       </div>
     </div>
     <aside class="profile-card">
       <div class="portrait-wrap"><img class="portrait" src="portrait.png" alt="王飞 / Fei Wang" /></div>
       <div class="quick-info">
-        <div><strong data-zh="博士" data-en="Ph.D.">博士</strong><span data-zh="江南大学，2018" data-en="Jiangnan University, 2018">江南大学，2018</span></div>
-        <div><strong data-zh="研究" data-en="Research">研究</strong><span data-zh="动力系统 · 控制 · 强化学习" data-en="Dynamics · Control · RL">动力系统 · 控制 · 强化学习</span></div>
-        <div><strong data-zh="教学" data-en="Teaching">教学</strong><span data-zh="常微分方程 · 非线性系统" data-en="ODE · Nonlinear Systems">常微分方程 · 非线性系统</span></div>
+        <div><strong data-zh="学位" data-en="Degree">学位</strong><span data-zh="博士 · 江南大学，2018" data-en="Ph.D. · Jiangnan University, 2018">博士 · 江南大学，2018</span></div>
+        <div><strong data-zh="研究" data-en="Research">研究</strong><span data-zh="微分方程定性理论 · 分数阶系统 · 控制理论 · 强化学习" data-en="Qualitative Theory of Differential Equations · Fractional-Order Systems · Control Theory · Reinforcement Learning">微分方程定性理论 · 分数阶系统 · 控制理论 · 强化学习</span></div>
+        <div><strong data-zh="课程" data-en="Courses">课程</strong><span data-zh="常微分方程 · 解析几何 · 微分方程数值解 · 非线性系统理论" data-en="Ordinary Differential Equations · Analytic Geometry · Numerical Methods for Differential Equations · Nonlinear Systems Theory">常微分方程 · 解析几何 · 微分方程数值解 · 非线性系统理论</span></div>
       </div>
     </aside>
   </div>
@@ -60,15 +77,15 @@
     <div>
       <div class="section-head compact"><div class="eyebrow">Biography</div><h3 data-zh="个人简介" data-en="About Me">个人简介</h3></div>
       <div class="bio-copy">
-        <p data-zh="王飞，工学博士，曲阜师范大学数学科学学院副教授、硕士生导师。2018年1月博士毕业于江南大学。" data-en="Fei Wang received his Ph.D. degree in Engineering from Jiangnan University, China, in January 2018. He is currently an Associate Professor and Master Supervisor with the School of Mathematical Sciences, Qufu Normal University, China.">王飞，工学博士，曲阜师范大学数学科学学院副教授、硕士生导师。2018年1月博士毕业于江南大学。</p>
+        <p class="bio-intro" data-zh="王飞，博士，曲阜师范大学数学科学学院副教授、硕士生导师。2018年1月博士毕业于江南大学。" data-en="Fei Wang received his Ph.D. degree from Jiangnan University, China, in January 2018. He is currently an Associate Professor and Master Supervisor with the School of Mathematical Sciences, Qufu Normal University, China.">王飞，博士，曲阜师范大学数学科学学院副教授、硕士生导师。2018年1月博士毕业于江南大学。</p>
         <p data-zh="主要从事网络化动力系统的分析与控制、强化学习与最优控制研究，具体涉及复杂动态网络、多智能体系统、分数阶动力系统、反应扩散系统及其同步、一致性、边界控制和智能优化控制等问题。近年来重点关注状态不可测反应扩散系统的边界观测与控制，以及具有输入饱和、时滞等约束的网络系统强化学习与最优控制。" data-en="His research interests include analysis and control of networked dynamical systems, reinforcement learning, and optimal control, with particular emphasis on complex dynamical networks, multi-agent systems, fractional-order dynamical systems, and reaction-diffusion systems. Recent work focuses on observer-based and boundary control of reaction-diffusion systems with unavailable states, and reinforcement-learning-based optimal control of networked systems subject to input saturation and time delays.">主要从事网络化动力系统的分析与控制、强化学习与最优控制研究，具体涉及复杂动态网络、多智能体系统、分数阶动力系统、反应扩散系统及其同步、一致性、边界控制和智能优化控制等问题。近年来重点关注状态不可测反应扩散系统的边界观测与控制，以及具有输入饱和、时滞等约束的网络系统强化学习与最优控制。</p>
-        <p data-zh="先后主持中国博士后科学基金、山东省自然科学基金青年基金、山东省自然科学基金面上项目及教育部重点实验室开放课题等科研项目。承担本科生《常微分方程》《微分方程数值解》《解析几何》等课程以及研究生《线性系统理论》《非线性系统理论》《优化方法》等课程教学。" data-en="He has served as principal investigator of projects supported by the China Postdoctoral Science Foundation, the Natural Science Foundation of Shandong Province, and a Ministry of Education key laboratory. He teaches undergraduate and graduate courses including Ordinary Differential Equations, Numerical Methods for Differential Equations, Linear Systems Theory, Nonlinear Systems Theory, and Optimization Methods.">先后主持中国博士后科学基金、山东省自然科学基金青年基金、山东省自然科学基金面上项目及教育部重点实验室开放课题等科研项目。承担本科生《常微分方程》《微分方程数值解》《解析几何》等课程以及研究生《线性系统理论》《非线性系统理论》《优化方法》等课程教学。</p>
+        <p data-zh="先后主持中国博士后科学基金、山东省自然科学基金青年基金和面上项目、教育部重点实验室开放课题等科研项目，并参与国家自然科学基金面上项目、山东省自然科学基金项目及山东省高等学校青创人才引育计划团队等。承担本科生《高等数学》《解析几何》《常微分方程》《微分方程数值解》《离散数学》等课程，以及研究生《线性系统理论》《非线性系统理论》《最优化方法》等课程教学。" data-en="He has led projects supported by the China Postdoctoral Science Foundation, the Natural Science Foundation of Shandong Province, and a Ministry of Education key laboratory, and has also participated in projects supported by the National Natural Science Foundation of China, the Natural Science Foundation of Shandong Province, and the Shandong Provincial Higher Education Young Innovative Talent Program. He has taught undergraduate courses including Advanced Mathematics, Analytic Geometry, Ordinary Differential Equations, Numerical Methods for Differential Equations, and Discrete Mathematics, as well as graduate courses including Linear Systems Theory, Nonlinear Systems Theory, and Optimization Methods.">先后主持中国博士后科学基金、山东省自然科学基金青年基金和面上项目、教育部重点实验室开放课题等科研项目，并参与国家自然科学基金面上项目、山东省自然科学基金项目及山东省高等学校青创人才引育计划团队等。承担本科生《高等数学》《解析几何》《常微分方程》《微分方程数值解》《离散数学》等课程，以及研究生《线性系统理论》《非线性系统理论》《最优化方法》等课程教学。</p>
       </div>
     </div>
     <aside class="about-side">
       <h4 data-zh="教育与经历" data-en="Education & Experience">教育与经历</h4>
       <div class="mini-timeline">
-        <div><span>2018.01</span><p data-zh="江南大学 · 工学博士" data-en="Ph.D. in Engineering · Jiangnan University">江南大学 · 工学博士</p></div>
+        <div><span>2018.01</span><p data-zh="江南大学 · 博士" data-en="Ph.D. · Jiangnan University">江南大学 · 博士</p></div>
         <div><span>2018.01–</span><p data-zh="曲阜师范大学数学科学学院" data-en="School of Mathematical Sciences, Qufu Normal University">曲阜师范大学数学科学学院</p></div>
       </div>
       <h4 data-zh="联系方式" data-en="Contact">联系方式</h4>
@@ -85,81 +102,194 @@
 
 <section id="research" class="section alt">
   <div class="container">
-    <div class="section-head"><div class="eyebrow">Research</div><h3 data-zh="研究方向" data-en="Research Areas">研究方向</h3><p data-zh="以网络化动力系统为主线，围绕动力学分析、协同控制、边界控制与数据驱动最优控制展开研究。" data-en="A unified research program centered on networked dynamical systems, spanning dynamical analysis, cooperative control, boundary control, and data-driven optimal control.">以网络化动力系统为主线，围绕动力学分析、协同控制、边界控制与数据驱动最优控制展开研究。</p></div>
-    <div class="cards research-cards">
-      <article class="card"><div class="num">01</div><h4 data-zh="分数阶动力系统与神经网络" data-en="Fractional-Order Systems & Neural Networks">分数阶动力系统与神经网络</h4><p data-zh="研究分数阶非线性系统的稳定性、同步与控制，关注异质阶、非恒同阶、时滞、脉冲及事件触发机制。" data-en="Stability, synchronization and control of fractional-order nonlinear systems, including heterogeneous orders, delays, impulsive effects and event-triggered mechanisms.">研究分数阶非线性系统的稳定性、同步与控制，关注异质阶、非恒同阶、时滞、脉冲及事件触发机制。</p></article>
-      <article class="card"><div class="num">02</div><h4 data-zh="复杂网络与多智能体系统" data-en="Complex Networks & Multi-Agent Systems">复杂网络与多智能体系统</h4><p data-zh="研究同步、一致性、编队及协同控制问题，并考虑网络攻击、通信约束、输入时滞和饱和等实际因素。" data-en="Synchronization, consensus, formation and cooperative control under cyber attacks, communication constraints, input delays and saturation.">研究同步、一致性、编队及协同控制问题，并考虑网络攻击、通信约束、输入时滞和饱和等实际因素。</p></article>
-      <article class="card"><div class="num">03</div><h4 data-zh="反应扩散系统与边界控制" data-en="Reaction-Diffusion Systems & Boundary Control">反应扩散系统与边界控制</h4><p data-zh="研究具有空间分布特性的反应扩散系统，关注边界观测、边界控制、输出反馈以及状态不可测问题。" data-en="Boundary observation, control and output feedback for spatially distributed reaction-diffusion systems with unavailable states.">研究具有空间分布特性的反应扩散系统，关注边界观测、边界控制、输出反馈以及状态不可测问题。</p></article>
-      <article class="card"><div class="num">04</div><h4 data-zh="强化学习与最优控制" data-en="Reinforcement Learning & Optimal Control">强化学习与最优控制</h4><p data-zh="研究强化学习、积分强化学习等方法在非线性系统和网络系统最优控制中的应用，重点考虑输入受限与时滞。" data-en="Reinforcement and integral reinforcement learning for optimal control of nonlinear and networked systems with practical constraints.">研究强化学习、积分强化学习等方法在非线性系统和网络系统最优控制中的应用，重点考虑输入受限与时滞。</p></article>
+    <div class="section-head">
+      <div class="eyebrow">Research</div>
+      <h3 data-zh="科研方向" data-en="Research Interests">科研方向</h3>
+      <p data-zh="研究主要围绕网络系统的动力学、协同控制与智能优化展开，关注复杂动态网络、多智能体系统以及分数阶与时空网络系统中的同步、一致性、分布式优化和最优控制问题。" data-en="My research focuses on the dynamics, cooperative control and intelligent optimization of networked systems, including complex dynamical networks, multi-agent systems, and fractional-order and spatiotemporal networked systems, with emphasis on synchronization, consensus, distributed optimization and optimal control.">研究主要围绕网络系统的动力学、协同控制与智能优化展开，关注复杂动态网络、多智能体系统以及分数阶与时空网络系统中的同步、一致性、分布式优化和最优控制问题。</p>
     </div>
-    <div class="projects-block"><h4 data-zh="主持科研项目" data-en="Selected Projects as PI">主持科研项目</h4><div class="timeline">
-      <div class="timeline-item"><span>2025–2027</span><div><strong data-zh="山东省自然科学基金面上项目" data-en="Natural Science Foundation of Shandong Province (General Program)">山东省自然科学基金面上项目</strong><p data-zh="反常扩散神经网络的建模、分析与边界控制研究" data-en="Modeling, analysis and boundary control of anomalous-diffusion neural networks">反常扩散神经网络的建模、分析与边界控制研究</p></div></div>
-      <div class="timeline-item"><span>2024–2025</span><div><strong data-zh="教育部重点实验室开放课题" data-en="Open Project of a MOE Key Laboratory">教育部重点实验室开放课题</strong><p data-zh="分数阶复杂动态网络的同步及其控制方法研究" data-en="Synchronization and control of fractional-order complex dynamical networks">分数阶复杂动态网络的同步及其控制方法研究</p></div></div>
-      <div class="timeline-item"><span>2023–2025</span><div><strong data-zh="山东省自然科学基金青年基金" data-en="Natural Science Foundation of Shandong Province (Youth Program)">山东省自然科学基金青年基金</strong><p data-zh="非恒同分数阶复杂动态网络的动力学行为分析与控制" data-en="Dynamics and control of nonidentical fractional-order complex dynamical networks">非恒同分数阶复杂动态网络的动力学行为分析与控制</p></div></div>
-      <div class="timeline-item"><span>2020–2022</span><div><strong data-zh="中国博士后科学基金面上项目（二等）" data-en="China Postdoctoral Science Foundation (General Program)">中国博士后科学基金面上项目（二等）</strong><p data-zh="异质阶次分数阶动态网络系统的同步及其控制" data-en="Synchronization and control of heterogeneous-order fractional dynamical networks">异质阶次分数阶动态网络系统的同步及其控制</p></div></div>
-    </div></div>
+
+    <div class="cards research-cards">
+      <article class="card">
+        <div class="num">01</div>
+        <h4 data-zh="网络系统的协同控制与分布式优化" data-en="Cooperative Control & Distributed Optimization of Networked Systems">网络系统的协同控制与分布式优化</h4>
+        <p data-zh="研究复杂动态网络与多智能体系统的同步、一致性、跟踪、编队与分布式优化问题，并关注时滞、扰动、通信约束及网络攻击环境下的安全协同控制。" data-en="Synchronization, consensus, tracking, formation and distributed optimization of complex dynamical networks and multi-agent systems, with attention to delays, disturbances, communication constraints and secure cooperation under cyber attacks.">研究复杂动态网络与多智能体系统的同步、一致性、跟踪、编队与分布式优化问题，并关注时滞、扰动、通信约束及网络攻击环境下的安全协同控制。</p>
+      </article>
+
+      <article class="card">
+        <div class="num">02</div>
+        <h4 data-zh="分数阶与时空网络系统动力学" data-en="Fractional-Order & Spatiotemporal Network Dynamics">分数阶与时空网络系统动力学</h4>
+        <p data-zh="研究分数阶、异质阶及反应扩散网络系统的动力学行为、同步与控制，涵盖分数阶复杂网络、多智能体系统、神经网络以及分布参数系统的边界观测与控制。" data-en="Dynamics, synchronization and control of fractional-order, heterogeneous-order and reaction-diffusion networked systems, including complex networks, multi-agent systems, neural networks, and boundary observation and control of distributed-parameter systems.">研究分数阶、异质阶及反应扩散网络系统的动力学行为、同步与控制，涵盖分数阶复杂网络、多智能体系统、神经网络以及分布参数系统的边界观测与控制。</p>
+      </article>
+
+      <article class="card">
+        <div class="num">03</div>
+        <h4 data-zh="强化学习" data-en="Reinforcement Learning">强化学习</h4>
+        <p data-zh="研究强化学习、积分强化学习与逆强化学习在网络系统和受约束非线性系统中的应用，重点关注输入饱和、输入时滞等约束下的最优同步、一致性、跟踪与层次优化控制。" data-en="Reinforcement learning, integral reinforcement learning and inverse reinforcement learning for networked and constrained nonlinear systems, with emphasis on optimal synchronization, consensus, tracking and hierarchical optimization under input saturation and delays.">研究强化学习、积分强化学习与逆强化学习在网络系统和受约束非线性系统中的应用，重点关注输入饱和、输入时滞等约束下的最优同步、一致性、跟踪与层次优化控制。</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <section id="publications" class="section">
   <div class="container">
-    <div class="section-head"><div class="eyebrow">Publications</div><h3 data-zh="论文成果" data-en="Publications">论文成果</h3><p data-zh="按研究方向分类展示代表性论文。点击标签即可筛选。" data-en="Selected publications are organized by research theme. Use the filters to browse.">按研究方向分类展示代表性论文。点击标签即可筛选。</p></div>
-    <div class="pub-filters" role="group" aria-label="Publication filters">
-      <button class="filter-btn active" data-filter="all" data-zh="全部" data-en="All">全部</button>
-      <button class="filter-btn" data-filter="rl" data-zh="强化学习与最优控制" data-en="RL & Optimal Control">强化学习与最优控制</button>
-      <button class="filter-btn" data-filter="rd" data-zh="反应扩散与边界控制" data-en="Reaction-Diffusion">反应扩散与边界控制</button>
-      <button class="filter-btn" data-filter="network" data-zh="复杂网络与多智能体" data-en="Networks & MAS">复杂网络与多智能体</button>
-      <button class="filter-btn" data-filter="fractional" data-zh="分数阶系统" data-en="Fractional Systems">分数阶系统</button>
+    <div class="section-head">
+      <div class="eyebrow">Publications</div>
+      <h3 data-zh="论文成果" data-en="Publications">论文成果</h3>
     </div>
-    <ol class="pub-list">
-      <li data-cat="rl network"><span class="pub-year">2026</span><strong>F. Wang*</strong>, Y. Wei, C. Zhang, N. Li. <em>Hierarchical optimal synchronization for heterogeneous nonlinear dynamical network systems with input saturation via reinforcement learning.</em> <span>IEEE Transactions on Control of Network Systems, 13(1): 16–27.</span></li>
-      <li data-cat="rd"><span class="pub-year">2026</span><strong>F. Wang*</strong>, Y. Wei, C. Zhang, Z. Wang. <em>Observer-based two-point intermittent boundary control for the reaction diffusion systems.</em> <span>IEEE Transactions on Automation Science and Engineering, 23: 497–507.</span></li>
-      <li data-cat="rl"><span class="pub-year">2026</span>C. Li, <strong>F. Wang*</strong>, N. Li. <em>Simplified reinforcement learning for optimal tracking control of input-constrained nonlinear systems using neural networks.</em> <span>Neurocomputing, 133899.</span></li>
-      <li data-cat="network"><span class="pub-year">2026</span>J. Guo, <strong>F. Wang*</strong>, N. Li. <em>Dynamic event-triggered delayed impulsive control for nonlinear system with packet loss.</em> <span>Applied Mathematics and Computation, 525: 130059.</span></li>
-      <li data-cat="rl network"><span class="pub-year">2026</span>S. Hu, <strong>F. Wang*</strong>, N. Li. <em>Inverse reinforcement learning for optimal consensus in input-delay multiagent systems with saturating actuators.</em> <span>International Journal of Robust and Nonlinear Control, in press.</span></li>
-      <li data-cat="network"><span class="pub-year">2025</span>J. Guo, <strong>F. Wang*</strong>, Y. Wei, C. Zhang. <em>Secure multi-synchronization of heterogeneous dynamical networks with deception attacks via event-triggered impulsive control.</em> <span>Communications in Nonlinear Science and Numerical Simulation, 140: 108421.</span></li>
-      <li data-cat="rl network"><span class="pub-year">2025</span>C. Li, <strong>F. Wang*</strong>, Y. Wei, C. Zhang. <em>Optimal consensus control for input-delay nonlinear multi-agent systems with input saturation utilizing synchronous integral reinforcement learning.</em> <span>European Journal of Control, 101262.</span></li>
-      <li data-cat="rd fractional network"><span class="pub-year">2023</span><strong>F. Wang</strong>, C. Zhang, Y. Yang, N. Li. <em>Observer-based consensus of fractional order parabolic PDEs agents on directed networks via boundary communication.</em> <span>Chaos, Solitons & Fractals, 170: 113332.</span></li>
-      <li data-cat="fractional"><span class="pub-year">2023</span><strong>F. Wang*</strong>, C. Zhang, N. Li. <em>Saturated delayed impulsive effects for fractional order nonlinear system with piecewise Caputo derivative and its application.</em> <span>Communications in Nonlinear Science and Numerical Simulation, 126: 107447.</span></li>
-      <li data-cat="fractional network"><span class="pub-year">2018</span><strong>F. Wang</strong>, Y. Yang. <em>Quasi-synchronization for fractional-order delayed dynamical networks with heterogeneous nodes.</em> <span>Applied Mathematics and Computation, 339: 1–14.</span></li>
-      <li data-cat="fractional"><span class="pub-year">2015</span><strong>F. Wang</strong>, Y. Yang, M. Hu. <em>Asymptotic stability of delayed fractional-order neural networks with impulsive effects.</em> <span>Neurocomputing, 154: 239–244.</span></li>
+
+<div class="pub-subhead">
+      <h4 data-zh="代表性论文" data-en="Selected Publications">代表性论文</h4>
+    </div>
+    <ol class="pub-list selected-pubs">
+<li data-cat="rl mas"><span class="pub-year">2026</span>Shenghan Hu, <strong>Fei Wang*</strong>, Ning Li. <em>Inverse reinforcement learning for optimal consensus in input-delay multiagent systems with saturating actuators.</em> <span>International Journal of Robust and Nonlinear Control (2026): 1–19. In press.</span></li>
+<li data-cat="mas"><span class="pub-year">2026</span>Mengqing Wang, <strong>Fei Wang*</strong>, Yunliang Wei, Chuan Zhang. <em>Observer-based affine formation maneuver control of multi-agent systems with time delays.</em> <span>International Journal of Robust and Nonlinear Control 36.8 (2026): 4355–4366.</span></li>
+<li data-cat="mas"><span class="pub-year">2026</span>Ruiqi Geng, Qiang Zhang, <strong>Fei Wang*</strong>, Ning Li. <em>Event-triggered distributed fixed-time optimization for multi-agent system with input time delays over directed networks.</em> <span>Nonlinear Analysis: Modelling and Control 31 (2026): 1–22.</span></li>
+<li data-cat="rl"><span class="pub-year">2026</span>Chaoyue Li, <strong>Fei Wang*</strong>, Ning Li. <em>Simplified reinforcement learning for optimal tracking control of input-constrained nonlinear systems using neural networks.</em> <span>Neurocomputing (2026): 133899.</span></li>
+<li data-cat="rd"><span class="pub-year">2026</span><strong>Fei Wang*</strong>, Yunliang Wei, Chuan Zhang, Zipeng Wang. <em>Observer-based two-point intermittent boundary control for the reaction diffusion systems.</em> <span>IEEE Transactions on Automation Science and Engineering 23: 497–507.</span></li>
+<li data-cat="rl network"><span class="pub-year">2026</span><strong>Fei Wang*</strong>, Yunliang Wei, Chuan Zhang, Ning Li. <em>Hierarchical optimal synchronization for heterogeneous nonlinear dynamical network systems with input saturation via reinforcement learning.</em> <span>IEEE Transactions on Control of Network Systems 13.1 (2026): 16–27.</span></li>
+<li data-cat="network"><span class="pub-year">2025</span>Junfeng Guo, <strong>Fei Wang*</strong>, Chuan Zhang, Xin Sui, Ning Li. <em>Secure cluster synchronization of the complex dynamical networks with pinning impulsive strategies: When heterogeneity meets deception attacks.</em> <span>European Journal of Control 85 (2025): 101277.</span></li>
+<li data-cat="rl mas"><span class="pub-year">2025</span>Chaoyue Li, <strong>Fei Wang*</strong>, Yunliang Wei, Chuan Zhang. <em>Optimal consensus control for input-delay nonlinear multi-agent systems with input saturation utilizing synchronous integral reinforcement learning.</em> <span>European Journal of Control (2025): 101262.</span></li>
+<li data-cat="network"><span class="pub-year">2025</span>Junfeng Guo, <strong>Fei Wang*</strong>, Yunliang Wei, Chuan Zhang. <em>Secure multi-synchronization of heterogeneous dynamical networks with deception attacks via event-triggered impulsive control.</em> <span>Communications in Nonlinear Science and Numerical Simulation 140 (2025): 108421.</span></li>
+<li data-cat="fractional mas"><span class="pub-year">2024</span>Conggui Huang, <strong>Fei Wang*</strong>. <em>Distributed consensus tracking of incommensurate heterogeneous fractional-order multi-agent systems based on vector Lyapunov function method.</em> <span>Fractal and Fractional 8.10 (2024): 575.</span></li>
+<li data-cat="fractional mas rd"><span class="pub-year">2023</span><strong>Fei Wang</strong>, Chuan Zhang, Yongqing Yang, Ning Li. <em>Observer-based consensus of fractional order parabolic PDEs agents on directed networks via boundary communication.</em> <span>Chaos, Solitons & Fractals 170 (2023): 113332.</span></li>
+<li data-cat="fractional network"><span class="pub-year">2018</span><strong>Fei Wang</strong>, Yongqing Yang. <em>Quasi-synchronization for fractional-order delayed dynamical networks with heterogeneous nodes.</em> <span>Applied Mathematics and Computation 339 (2018): 1–14.</span></li>
     </ol>
-    <p class="section-note" data-zh="完整论文列表后续可继续补充；目前以代表性论文为主。" data-en="A complete publication list can be added later; this page currently highlights representative work.">完整论文列表后续可继续补充；目前以代表性论文为主。</p>
+
+    <div class="hero-actions" style="margin-top:1.4rem">
+      <a class="btn primary" href="publications.html" target="_blank" rel="noopener" data-zh="查看完整论文列表 ↗" data-en="Full Publication List ↗">查看完整论文列表 ↗</a>
+      <a class="btn ghost" href="https://scholar.google.com/citations?user=Hgl_O2YAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar ↗</a>
+    </div>
+    <p class="pub-note"><span data-zh="* 表示通讯作者。" data-en="* denotes corresponding author.">* 表示通讯作者。</span></p>
   </div>
 </section>
 
 <section id="teaching" class="section alt">
-  <div class="container teaching-grid">
-    <div><div class="section-head compact"><div class="eyebrow">Teaching</div><h3 data-zh="教学工作" data-en="Teaching">教学工作</h3></div>
-      <div class="course-columns"><div><h4 data-zh="本科课程" data-en="Undergraduate">本科课程</h4><ul><li data-zh="常微分方程" data-en="Ordinary Differential Equations">常微分方程</li><li data-zh="微分方程数值解" data-en="Numerical Methods for Differential Equations">微分方程数值解</li><li data-zh="解析几何" data-en="Analytic Geometry">解析几何</li></ul></div><div><h4 data-zh="研究生课程" data-en="Graduate">研究生课程</h4><ul><li data-zh="非线性系统理论" data-en="Nonlinear Systems Theory">非线性系统理论</li><li data-zh="线性系统理论" data-en="Linear Systems Theory">线性系统理论</li><li data-zh="优化方法" data-en="Optimization Methods">优化方法</li></ul></div></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Teaching</div>
+      <h3 data-zh="教学工作" data-en="Teaching">教学工作</h3>
+      <p data-zh="长期承担本科生与研究生课程教学，注重将微分方程、动力系统与控制理论中的基本思想融入课堂，并持续开展课程建设、教学改革与数字化教学资源建设。" data-en="I teach both undergraduate and graduate courses, with emphasis on connecting fundamental ideas from differential equations, dynamical systems and control theory with classroom teaching, curriculum development and digital learning resources.">长期承担本科生与研究生课程教学，注重将微分方程、动力系统与控制理论中的基本思想融入课堂，并持续开展课程建设、教学改革与数字化教学资源建设。</p>
     </div>
-    <div class="highlight-panel"><h4 data-zh="代表性教学成果" data-en="Selected Teaching Achievements">代表性教学成果</h4><ul><li>2025 · <span data-zh="山东省研究生优质课程《非线性系统理论》" data-en="Shandong Provincial High-Quality Graduate Course: Nonlinear Systems Theory">山东省研究生优质课程《非线性系统理论》</span></li><li>2025 · <span data-zh="山东省课程思政示范课程《常微分方程》" data-en="Shandong Provincial Curriculum Ideological & Political Education Demonstration Course: ODE">山东省课程思政示范课程《常微分方程》</span></li><li>2024 · <span data-zh="曲阜师范大学教学成果二等奖" data-en="Second Prize, Teaching Achievement Award, QFNU">曲阜师范大学教学成果二等奖</span></li><li>2023 · <span data-zh="校级“金课堂”《常微分方程》" data-en="QFNU Gold Classroom: Ordinary Differential Equations">校级“金课堂”《常微分方程》</span></li><li>2019 · <span data-zh="全国高校数学微课程设计竞赛华东赛区一等奖、山东省一等奖" data-en="First Prize, East China Division and Shandong Province, National Mathematics Micro-course Design Competition">全国高校数学微课程设计竞赛华东赛区一等奖、山东省一等奖</span></li></ul></div>
+
+    <div class="teaching-grid">
+      <div>
+        <div class="course-columns">
+          <div>
+            <h4 data-zh="本科课程" data-en="Undergraduate Courses">本科课程</h4>
+            <ul>
+              <li data-zh="常微分方程" data-en="Ordinary Differential Equations">常微分方程</li>
+              <li data-zh="解析几何" data-en="Analytic Geometry">解析几何</li>
+              <li data-zh="高等数学" data-en="Advanced Mathematics">高等数学</li>
+              <li data-zh="微分方程数值解" data-en="Numerical Methods for Differential Equations">微分方程数值解</li>
+              <li data-zh="离散数学" data-en="Discrete Mathematics">离散数学</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-zh="研究生课程" data-en="Graduate Courses">研究生课程</h4>
+            <ul>
+              <li data-zh="线性系统理论" data-en="Linear Systems Theory">线性系统理论</li>
+              <li data-zh="非线性系统理论" data-en="Nonlinear Systems Theory">非线性系统理论</li>
+              <li data-zh="最优化方法" data-en="Optimization Methods">最优化方法</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="prospective" style="margin-top:1.25rem">
+          <h4 data-zh="课程资源" data-en="Course Resources">课程资源</h4>
+          <p data-zh="《常微分方程》部分课程讲解与例题已录制并发布于 B 站，可作为课堂学习与复习的补充资源。" data-en="Selected lectures and worked examples for Ordinary Differential Equations are available on Bilibili as supplementary learning and review materials.">《常微分方程》部分课程讲解与例题已录制并发布于 B 站，可作为课堂学习与复习的补充资源。</p>
+          <a class="btn ghost" href="https://space.bilibili.com/259471343" target="_blank" rel="noopener" data-zh="查看《常微分方程》课程视频 ↗" data-en="ODE Course Videos ↗">查看《常微分方程》课程视频 ↗</a>
+        </div>
+      </div>
+
+      <div class="highlight-panel">
+        <h4 data-zh="代表性教学成果（首位 / 独立）" data-en="Selected Teaching Achievements (Lead / Individual)">代表性教学成果（首位 / 独立）</h4>
+        <ul>
+          <li>2025 · <span data-zh="山东省研究生优质课程《非线性系统理论》" data-en="Shandong Provincial High-Quality Graduate Course: Nonlinear Systems Theory">山东省研究生优质课程《非线性系统理论》</span></li>
+          <li>2025 · <span data-zh="山东省课程思政示范课程《常微分方程》" data-en="Shandong Provincial Curriculum Ideological and Political Education Demonstration Course: Ordinary Differential Equations">山东省课程思政示范课程《常微分方程》</span></li>
+          <li>2024 · <span data-zh="曲阜师范大学教学成果二等奖（首位）" data-en="Second Prize, Teaching Achievement Award, QFNU (lead contributor)">曲阜师范大学教学成果二等奖（首位）</span></li>
+          <li>2023 · <span data-zh="曲阜师范大学校级“金课堂”《常微分方程》" data-en="QFNU Gold Classroom: Ordinary Differential Equations">曲阜师范大学校级“金课堂”《常微分方程》</span></li>
+          <li>2023 · <span data-zh="曲阜师范大学第十四届青年教师教学比赛二等奖（校级）" data-en="Second Prize, 14th Young Faculty Teaching Competition, QFNU">曲阜师范大学第十四届青年教师教学比赛二等奖（校级）</span></li>
+          <li>2022 · <span data-zh="曲阜师范大学第十三届青年教师教学比赛二等奖（校级）" data-en="Second Prize, 13th Young Faculty Teaching Competition, QFNU">曲阜师范大学第十三届青年教师教学比赛二等奖（校级）</span></li>
+          <li>2019 · <span data-zh="全国高校数学微课程设计竞赛华东赛区一等奖、山东省一等奖" data-en="First Prize, East China Division and Shandong Province, National Mathematics Micro-course Design Competition">全国高校数学微课程设计竞赛华东赛区一等奖、山东省一等奖</span></li>
+        </ul>
+
+        <div style="margin-top:1.1rem;padding-top:1rem;border-top:1px solid rgba(120,150,180,.22)">
+          <h4 style="margin-bottom:.6rem" data-zh="重要参与成果" data-en="Major Collaborative Teaching Achievements">重要参与成果</h4>
+          <ul>
+            <li><span data-zh="国家级一流本科课程《常微分方程》（参与，排名 4）" data-en="National First-Class Undergraduate Course: Ordinary Differential Equations (contributor, 4th-listed)">国家级一流本科课程《常微分方程》（参与，排名 4）</span></li>
+            <li><span data-zh="山东省教学成果奖一等奖（参与，排名 5）" data-en="First Prize, Shandong Provincial Teaching Achievement Award (contributor, 5th-listed)">山东省教学成果奖一等奖（参与，排名 5）</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="students" class="section">
   <div class="container">
-    <div class="section-head"><div class="eyebrow">Students</div><h3 data-zh="学生培养" data-en="Student Mentoring">学生培养</h3><p data-zh="重视将课堂教学、科研训练与学科竞赛相结合，鼓励学生从微分方程、动力系统、控制理论及数学建模问题出发开展研究与创新。" data-en="Student mentoring integrates coursework, research training and competitions, encouraging students to explore problems in differential equations, dynamical systems, control theory and mathematical modeling.">重视将课堂教学、科研训练与学科竞赛相结合，鼓励学生从微分方程、动力系统、控制理论及数学建模问题出发开展研究与创新。</p></div>
-    <div class="student-awards">
-      <div class="award-item"><span>2026</span><p data-zh="山东省师范生从业技能大赛一等奖（学生：韩瑜）" data-en="First Prize, Shandong Normal Student Teaching Skills Competition">山东省师范生从业技能大赛一等奖（学生：韩瑜）</p></div>
-      <div class="award-item"><span>2025</span><p data-zh="全国大学生数学建模竞赛山东省一等奖 2 项" data-en="Two First Prizes, Shandong Division, China Undergraduate Mathematical Contest in Modeling">全国大学生数学建模竞赛山东省一等奖 2 项</p></div>
-      <div class="award-item"><span>2023</span><p data-zh="“田家炳杯”全国师范院校师范生教学技能竞赛国家一等奖（学生：尹子暄）" data-en="National First Prize, Tian Jiabing Cup Teaching Skills Competition">“田家炳杯”全国师范院校师范生教学技能竞赛国家一等奖（学生：尹子暄）</p></div>
-      <div class="award-item"><span>2023</span><p data-zh="山东省师范生从业技能大赛一等奖（第一名）（学生：王茜）" data-en="First Prize (1st place), Shandong Normal Student Teaching Skills Competition">山东省师范生从业技能大赛一等奖（第一名）（学生：王茜）</p></div>
-      <div class="award-item"><span>2022</span><p data-zh="全国大学生统计建模大赛国家三等奖、山东省一等奖" data-en="National Third Prize and Shandong First Prize, National Undergraduate Statistical Modeling Competition">全国大学生统计建模大赛国家三等奖、山东省一等奖</p></div>
-      <div class="award-item"><span>2021</span><p data-zh="全国大学生数学建模竞赛国家二等奖" data-en="National Second Prize, China Undergraduate Mathematical Contest in Modeling">全国大学生数学建模竞赛国家二等奖</p></div>
-      <div class="award-item"><span>2021</span><p data-zh="全国研究生数学建模竞赛国家三等奖" data-en="National Third Prize, China Graduate Mathematical Contest in Modeling">全国研究生数学建模竞赛国家三等奖</p></div>
+    <div class="section-head">
+      <div class="eyebrow">Students</div>
+      <h3 data-zh="学生培养" data-en="Student Mentoring">学生培养</h3>
+      <p data-zh="注重将课程学习、科研训练与学科竞赛相结合，鼓励学生围绕网络系统、动力系统与微分方程、控制理论、强化学习和数学建模等方向开展持续学习与研究。" data-en="Student mentoring integrates coursework, research training and academic competitions, with an emphasis on sustained study and research in networked systems, dynamical systems and differential equations, control theory, reinforcement learning, and mathematical modeling.">注重将课程学习、科研训练与学科竞赛相结合，鼓励学生围绕网络系统、动力系统与微分方程、控制理论、强化学习和数学建模等方向开展持续学习与研究。</p>
     </div>
-    <div class="prospective"><h4 data-zh="欢迎加入" data-en="Prospective Students">欢迎加入</h4><p data-zh="欢迎对动力系统与微分方程、分数阶系统、复杂网络与多智能体系统、控制理论与优化、强化学习与智能控制、数学建模等方向感兴趣的本科生和研究生联系。" data-en="Undergraduate and graduate students interested in dynamical systems, fractional-order systems, complex networks, multi-agent systems, control, optimization, reinforcement learning, or mathematical modeling are welcome to contact me.">欢迎对动力系统与微分方程、分数阶系统、复杂网络与多智能体系统、控制理论与优化、强化学习与智能控制、数学建模等方向感兴趣的本科生和研究生联系。</p></div>
+
+    <div class="teaching-grid" style="margin-bottom:34px">
+      <div class="highlight-panel">
+        <h4 data-zh="研究生培养" data-en="Graduate Supervision">研究生培养</h4>
+        <p data-zh="已毕业硕士研究生的学位论文涵盖复杂网络同步、多智能体系统、非线性系统参数识别、输入约束最优控制和模糊神经网络等方向。" data-en="Completed master's theses cover complex-network synchronization, multi-agent systems, nonlinear-system parameter identification, optimal control with input constraints, and fuzzy neural networks.">已毕业硕士研究生的学位论文涵盖复杂网络同步、多智能体系统、非线性系统参数识别、输入约束最优控制和模糊神经网络等方向。</p>
+        <div class="alumni-list">
+          <div class="alumni-item"><strong>张溢瑶 · 2026届硕士</strong><span data-zh="《脉冲控制下模糊细胞神经网络的同步问题》" data-en="Synchronization of Fuzzy Cellular Neural Networks under Impulsive Control">《脉冲控制下模糊细胞神经网络的同步问题》</span></div>
+          <div class="alumni-item"><strong>李超越 · 2026届硕士</strong><span data-zh="《具有输入约束的非线性系统的最优控制》" data-en="Optimal Control of Nonlinear Systems with Input Constraints">《具有输入约束的非线性系统的最优控制》</span></div>
+          <div class="alumni-item"><strong>郭俊峰 · 2025届硕士</strong><span data-zh="《欺骗攻击和DoS攻击下动态网络系统的同步控制》" data-en="Synchronization Control of Dynamical Network Systems under Deception and DoS Attacks">《欺骗攻击和DoS攻击下动态网络系统的同步控制》</span></div>
+          <div class="alumni-item"><strong>王梦晴 · 2025届硕士</strong><span data-zh="《非理想环境下的多智能体系统的仿射编队控制》" data-en="Affine Formation Control of Multi-Agent Systems in Non-Ideal Environments">《非理想环境下的多智能体系统的仿射编队控制》</span></div>
+          <div class="alumni-item"><strong>薛倩文 · 2024届硕士</strong><span data-zh="《基于自适应同步的非线性系统参数识别》" data-en="Parameter Identification of Nonlinear Systems Based on Adaptive Synchronization">《基于自适应同步的非线性系统参数识别》</span></div>
+        </div>
+      </div>
+
+      <div class="highlight-panel">
+        <h4 data-zh="科研训练与创新实践" data-en="Research Training & Innovation">科研训练与创新实践</h4>
+        <ul>
+          <li><span data-zh="2024 · 指导硕士研究生郭俊峰获山东省研究生导师指导能力提升项目——研究生创新成果" data-en="2024 · Supervised graduate student Junfeng Guo in a Shandong provincial graduate innovation achievement project">2024 · 指导硕士研究生郭俊峰获山东省研究生导师指导能力提升项目——研究生创新成果</span></li>
+          <li><span data-zh="2020 · 指导省级本科生大学生创新项目 1 项（学生：李玉茹，已结项）" data-en="2020 · Supervised a provincial undergraduate innovation project (student: Yuru Li; completed)">2020 · 指导省级本科生大学生创新项目 1 项（学生：李玉茹，已结项）</span></li>
+          <li><span data-zh="2020 · 指导曲阜师范大学优秀学士学位论文：《代数图论及其在协同控制中的应用》（学生：李翠园）" data-en="2020 · Supervised an Outstanding Bachelor's Thesis at QFNU: “Algebraic Graph Theory and Its Applications in Cooperative Control” (student: Cuiyuan Li)">2020 · 指导曲阜师范大学优秀学士学位论文：《代数图论及其在协同控制中的应用》（学生：李翠园）</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head compact">
+      <h4 style="font-size:22px;margin:0" data-zh="代表性学生成果" data-en="Selected Student Achievements">代表性学生成果</h4>
+      <p data-zh="以下列出部分具有代表性的学生竞赛与创新成果。" data-en="Selected representative achievements from student competitions and innovation activities are listed below.">以下列出部分具有代表性的学生竞赛与创新成果。</p>
+    </div>
+
+    <div class="student-awards">
+      <div class="award-item"><span>2026</span><p data-zh="第十四届山东省师范生从业技能大赛一等奖（学生：韩瑜）" data-en="First Prize, 14th Shandong Normal Student Teaching Skills Competition (student: Han Yu)">第十四届山东省师范生从业技能大赛一等奖（学生：韩瑜）</p></div>
+      <div class="award-item"><span>2025</span><p data-zh="全国大学生数学建模竞赛山东省一等奖 2 项（学生：郑子欣、黄梦璐、王英杰；张传兴、孙佳妮、陈学栋）" data-en="Two Shandong First Prizes, China Undergraduate Mathematical Contest in Modeling">全国大学生数学建模竞赛山东省一等奖 2 项（学生：郑子欣、黄梦璐、王英杰；张传兴、孙佳妮、陈学栋）</p></div>
+      <div class="award-item"><span>2024</span><p data-zh="“田家炳杯”第十届全国师范院校师范生教学技能竞赛国家三等奖（学生：汤嘉玟）" data-en="National Third Prize, 10th Tian Jiabing Cup Teaching Skills Competition (student: Jiawen Tang)">“田家炳杯”第十届全国师范院校师范生教学技能竞赛国家三等奖（学生：汤嘉玟）</p></div>
+      <div class="award-item"><span>2023</span><p data-zh="“田家炳杯”第八届全国师范院校师范生教学技能竞赛国家一等奖（学生：尹子暄）" data-en="National First Prize, 8th Tian Jiabing Cup Teaching Skills Competition (student: Zixuan Yin)">“田家炳杯”第八届全国师范院校师范生教学技能竞赛国家一等奖（学生：尹子暄）</p></div>
+      <div class="award-item"><span>2023</span><p data-zh="第十一届山东省师范生从业技能大赛一等奖（第一名）（学生：王茜）" data-en="First Prize (1st place), 11th Shandong Normal Student Teaching Skills Competition (student: Qian Wang)">第十一届山东省师范生从业技能大赛一等奖（第一名）（学生：王茜）</p></div>
+      <div class="award-item"><span>2022</span><p data-zh="全国大学生统计建模大赛国家三等奖、山东省一等奖（学生：王子怡、王泓、褚福星）" data-en="National Third Prize and Shandong First Prize, National Undergraduate Statistical Modeling Competition">全国大学生统计建模大赛国家三等奖、山东省一等奖（学生：王子怡、王泓、褚福星）</p></div>
+      <div class="award-item"><span>2021</span><p data-zh="全国大学生数学建模竞赛国家二等奖（学生：任意飞、张汝阳、潘晓迪）" data-en="National Second Prize, China Undergraduate Mathematical Contest in Modeling (students: Yifei Ren, Ruyang Zhang, Xiaodi Pan)">全国大学生数学建模竞赛国家二等奖（学生：任意飞、张汝阳、潘晓迪）</p></div>
+      <div class="award-item"><span>2021</span><p data-zh="全国研究生数学建模竞赛国家三等奖（学生：常远、王莉、王秋爽）" data-en="National Third Prize, China Graduate Mathematical Contest in Modeling">全国研究生数学建模竞赛国家三等奖（学生：常远、王莉、王秋爽）</p></div>
+      <div class="award-item"><span>2020</span><p data-zh="美国大学生数学建模竞赛 M 奖（学生：张欣怡、陈宇、庞惠心）" data-en="M Award, Mathematical Contest in Modeling (students: Xinyi Zhang, Yu Chen, Huixin Pang)">美国大学生数学建模竞赛 M 奖（学生：张欣怡、陈宇、庞惠心）</p></div>
+    </div>
+
+    <div class="prospective">
+      <h4 data-zh="欢迎加入" data-en="Prospective Students">欢迎加入</h4>
+      <p data-zh="欢迎对网络系统、动力系统与微分方程、分数阶系统、控制理论、强化学习、分布式优化及数学建模等方向感兴趣的本科生和研究生联系。希望学生具有扎实的数学基础，并愿意在论文阅读、理论分析和数值仿真中持续投入。" data-en="Undergraduate and graduate students interested in networked systems, dynamical systems and differential equations, fractional-order systems, control theory, reinforcement learning, distributed optimization, or mathematical modeling are welcome to contact me. A solid mathematical foundation and sustained engagement in reading, analysis and numerical simulation are highly valued.">欢迎对网络系统、动力系统与微分方程、分数阶系统、控制理论、强化学习、分布式优化及数学建模等方向感兴趣的本科生和研究生联系。希望学生具有扎实的数学基础，并愿意在论文阅读、理论分析和数值仿真中持续投入。</p>
+    </div>
   </div>
 </section>
 
 <section id="notes" class="section alt">
   <div class="container">
-    <div class="section-head"><div class="eyebrow">Notes & Posts</div><h3 data-zh="随笔与分享" data-en="Notes & Posts">随笔与分享</h3><p data-zh="这里用于同步微信公众号中的科研随笔、教学笔记和课题组动态。后续只需添加标题、日期、摘要和原文链接即可更新。" data-en="This section is reserved for research notes, teaching reflections and group updates, synchronized with WeChat posts. Each entry can be updated with a title, date, short summary and source link.">这里用于同步微信公众号中的科研随笔、教学笔记和课题组动态。后续只需添加标题、日期、摘要和原文链接即可更新。</p></div>
-    <div class="notes-grid">
-      <article class="note-card"><div class="note-meta" data-zh="科研随笔" data-en="Research Note">科研随笔</div><h4 data-zh="最新文章将在这里展示" data-en="Latest posts will appear here">最新文章将在这里展示</h4><p data-zh="可放论文阅读、研究心得或控制理论相关思考，并链接到微信公众号原文。" data-en="Use this space for paper notes, research reflections, or control-theory discussions, with links to the original WeChat posts.">可放论文阅读、研究心得或控制理论相关思考，并链接到微信公众号原文。</p></article>
-      <article class="note-card"><div class="note-meta" data-zh="教学笔记" data-en="Teaching Note">教学笔记</div><h4 data-zh="常微分方程与课程教学" data-en="ODE and Course Teaching">常微分方程与课程教学</h4><p data-zh="可同步课程讲解、例题分析、教学设计及数学建模相关内容。" data-en="Course explanations, examples, teaching design and mathematical modeling notes can be shared here.">可同步课程讲解、例题分析、教学设计及数学建模相关内容。</p></article>
-      <article class="note-card"><div class="note-meta" data-zh="课题组动态" data-en="Group News">课题组动态</div><h4 data-zh="论文、会议与学生动态" data-en="Papers, Conferences & Students">论文、会议与学生动态</h4><p data-zh="用于记录论文录用、参加学术会议、学生获奖和组内活动。" data-en="Updates on accepted papers, conference participation, student awards and group activities.">用于记录论文录用、参加学术会议、学生获奖和组内活动。</p></article>
+    <div class="section-head">
+      <div class="eyebrow">News & Notes</div>
+      <h3 data-zh="动态与分享" data-en="News & Notes">动态与分享</h3>
+      <p data-zh="记录课题组科研成果、学生与学术活动，以及控制理论、数学与计算方面的学习分享。" data-en="Research updates, student and academic activities, and learning notes on control theory, mathematics and computation.">记录课题组科研成果、学生与学术活动，以及控制理论、数学与计算方面的学习分享。</p>
+    </div>
+    <div class="notes-grid" id="homeNotes"></div>
+    <div style="margin-top:24px">
+      <a class="btn ghost" href="notes.html" target="_blank" rel="noopener" data-zh="查看全部动态与分享 ↗" data-en="View All News & Notes ↗">查看全部动态与分享 ↗</a>
     </div>
   </div>
 </section>
@@ -181,8 +311,24 @@
 
 <div class="modal" id="qrModal" aria-hidden="true"><div class="modal-backdrop" data-close="1"></div><div class="modal-card"><button class="modal-close" id="modalClose">×</button><h4 data-zh="微信公众号" data-en="WeChat Official Account">微信公众号</h4><img src="wechat_qr.png" alt="课题组微信公众号二维码" /><p data-zh="扫码关注课题组动态与分享" data-en="Scan to follow group updates and posts">扫码关注课题组动态与分享</p></div></div>
 
-<div class="modal" id="bioModal" aria-hidden="true"><div class="modal-backdrop" data-bio-close="1"></div><div class="modal-card bio-modal-card"><button class="modal-close" id="bioClose">×</button><h4 data-zh="快速简介" data-en="Quick Bio">快速简介</h4><p id="quickBioText" data-zh="王飞，工学博士，曲阜师范大学数学科学学院副教授、硕士生导师。主要从事网络化动力系统的分析与控制、强化学习与最优控制研究，研究内容涉及复杂网络、多智能体系统、分数阶动力系统及反应扩散系统。" data-en="Fei Wang is an Associate Professor and Master Supervisor at the School of Mathematical Sciences, Qufu Normal University. His research focuses on analysis and control of networked dynamical systems, reinforcement learning, and optimal control, including complex networks, multi-agent systems, fractional-order systems, and reaction-diffusion systems.">王飞，工学博士，曲阜师范大学数学科学学院副教授、硕士生导师。主要从事网络化动力系统的分析与控制、强化学习与最优控制研究，研究内容涉及复杂网络、多智能体系统、分数阶动力系统及反应扩散系统。</p><button class="btn primary copy-btn" id="copyBioBtn" data-zh="复制简介" data-en="Copy Bio">复制简介</button></div></div>
+<div class="modal" id="bioModal" aria-hidden="true"><div class="modal-backdrop" data-bio-close="1"></div><div class="modal-card bio-modal-card"><button class="modal-close" id="bioClose">×</button><h4 data-zh="快速简介" data-en="Quick Bio">快速简介</h4><p id="quickBioText" data-zh="王飞，博士，曲阜师范大学数学科学学院副教授、硕士生导师。主要围绕网络系统动力学与控制开展研究，研究内容涉及复杂网络同步、多智能体一致性与编队、分布式优化、分数阶与反应扩散系统，以及强化学习与最优控制。" data-en="Fei Wang is an Associate Professor and Master Supervisor at the School of Mathematical Sciences, Qufu Normal University. His research focuses on dynamics and control of networked systems, including complex-network synchronization, consensus and formation of multi-agent systems, distributed optimization, fractional-order and reaction-diffusion systems, and reinforcement learning and optimal control.">王飞，博士，曲阜师范大学数学科学学院副教授、硕士生导师。主要围绕网络系统动力学与控制开展研究，研究内容涉及复杂网络同步、多智能体一致性与编队、分布式优化、分数阶与反应扩散系统，以及强化学习与最优控制。</p><div class="hero-actions" style="margin-top:1rem"><button class="btn primary copy-btn" id="copyBioBtn" data-zh="复制简介" data-en="Copy Bio">复制简介</button><a class="btn ghost" href="quick-bio.html" target="_blank" rel="noopener" data-zh="会议简介页 ↗" data-en="Conference Bio ↗">会议简介页 ↗</a></div></div></div>
 
 <script src="script.js"></script>
+
+<script src="notes-data.js"></script>
+<script>
+(function(){
+  const root = document.getElementById('homeNotes');
+  if(!root || !Array.isArray(window.NOTES_DATA)) return;
+  const items = [...window.NOTES_DATA].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,4);
+  root.innerHTML = items.map(p => `
+    <article class="note-card">
+      <div class="note-meta">${p.date} · <span class="note-cat" data-zh="${p.category_zh}" data-en="${p.category_en}">${p.category_zh}</span></div>
+      <h4>${p.title}</h4>
+      <a href="${p.url}" target="_blank" rel="noopener" data-zh="阅读微信原文 ↗" data-en="Read on WeChat ↗">阅读微信原文 ↗</a>
+    </article>`).join('');
+})();
+</script>
+
 </body>
 </html>

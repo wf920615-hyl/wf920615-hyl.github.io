@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Academic CV | Fei Wang</title>
+<style>
+:root{--blue:#3f78ad;--ink:#18334e;--muted:#667b8f;--line:#dce7f0}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;color:var(--ink);background:#f6faff}
+.page{max-width:980px;margin:32px auto;background:#fff;padding:42px 48px;border:1px solid var(--line);box-shadow:0 12px 30px rgba(40,80,120,.07)}
+.top{display:grid;grid-template-columns:1fr auto;gap:24px;border-bottom:2px solid #93badc;padding-bottom:18px}.top h1{font-size:34px;margin:0}.top p{margin:5px 0;color:var(--muted)}.top img{width:92px;height:118px;object-fit:cover;border-radius:10px}
+.contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:14px}.contact a{color:var(--blue);text-decoration:none}
+h2{font-size:19px;margin:28px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line);color:#274f75}
+p,li{line-height:1.7} ul{margin:8px 0;padding-left:22px}.item{margin-bottom:11px}.date{display:inline-block;min-width:135px;color:var(--blue);font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.actions{max-width:980px;margin:20px auto 0;display:flex;gap:10px}.actions a,.actions button{border:0;border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}.primary{background:var(--blue);color:#fff}.ghost{background:#eaf3fb;color:var(--blue)}
+.note{font-size:13px;color:var(--muted)}
+@media(max-width:760px){.page{margin:0;padding:26px 20px;border:0}.top{grid-template-columns:1fr}.top img{display:none}.two{grid-template-columns:1fr}.actions{margin:12px 16px}}
+@media print{body{background:#fff}.actions{display:none}.page{max-width:none;margin:0;box-shadow:none;border:0;padding:0 8mm}a{color:inherit!important}}
+</style>
+</head>
+<body>
+<div class="actions"><a class="ghost" href="index.html">← 返回主页</a><a class="ghost" href="quick-bio.html">会议简介</a><button class="primary" onclick="window.print()">打印 / 保存为 PDF</button></div>
+<main class="page">
+  <div class="top">
+    <div>
+      <h1>王飞 · Fei Wang</h1>
+      <p>副教授 · 硕士生导师 | Associate Professor · Master Supervisor</p>
+      <p>曲阜师范大学数学科学学院 | School of Mathematical Sciences, Qufu Normal University</p>
+      <div class="contact">
+        <a href="mailto:fei_9206@qfnu.edu.cn">fei_9206@qfnu.edu.cn</a>
+        <a href="mailto:fei_9206@163.com">fei_9206@163.com</a>
+        <a href="https://scholar.google.com/citations?user=Hgl_O2YAAAAJ&hl=zh-CN">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-2952-4911">ORCID</a>
+        <a href="https://github.com/wf920615-hyl">GitHub</a>
+      </div>
+    </div>
+    <img src="portrait.png" alt="Fei Wang">
+  </div>
+
+  <h2>个人简介 | Profile</h2>
+  <p>博士，2018年1月毕业于江南大学。主要围绕网络系统动力学、协同控制与智能优化开展研究，涉及复杂动态网络、多智能体系统、分数阶与反应扩散系统、分布式优化、强化学习与最优控制等方向。先后主持中国博士后科学基金、山东省自然科学基金青年基金和面上项目、教育部重点实验室开放课题等，并参与国家自然科学基金面上项目、山东省自然科学基金项目及山东省高等学校青创人才引育计划团队等。</p>
+
+  <h2>研究方向 | Research Interests</h2>
+  <ul>
+    <li>网络系统的协同控制与分布式优化</li>
+    <li>分数阶与时空网络系统动力学</li>
+    <li>强化学习与最优控制</li>
+  </ul>
+
+  <h2>教育与工作经历 | Education & Appointment</h2>
+  <div class="item"><span class="date">2018.01</span>江南大学，博士</div>
+  <div class="item"><span class="date">2018.01–至今</span>曲阜师范大学数学科学学院</div>
+
+
+  <h2>代表性论文 | Selected Publications</h2>
+  <ol>
+    <li>F. Wang, Y. Wei, C. Zhang, N. Li. Hierarchical optimal synchronization for heterogeneous nonlinear dynamical network systems with input saturation via reinforcement learning. <em>IEEE Transactions on Control of Network Systems</em>, 2026.</li>
+    <li>F. Wang, Y. Wei, C. Zhang, Z. Wang. Observer-based two-point intermittent boundary control for the reaction diffusion systems. <em>IEEE Transactions on Automation Science and Engineering</em>.</li>
+    <li>S. Hu, F. Wang*, N. Li. Inverse reinforcement learning for optimal consensus in input-delay multiagent systems with saturating actuators. <em>International Journal of Robust and Nonlinear Control</em>, 2026.</li>
+    <li>J. Guo, F. Wang*, Y. Wei, C. Zhang. Secure multi-synchronization of heterogeneous dynamical networks with deception attacks via event-triggered impulsive control. <em>Communications in Nonlinear Science and Numerical Simulation</em>, 2025.</li>
+  </ol>
+  <p class="note">完整第一/通讯作者论文列表见：<a href="publications.html">publications.html</a></p>
+
+  <h2>教学 | Teaching</h2>
+  <div class="two">
+    <div><strong>本科课程</strong><ul><li>高等数学</li><li>解析几何</li><li>常微分方程</li><li>微分方程数值解</li><li>离散数学</li></ul></div>
+    <div><strong>研究生课程</strong><ul><li>线性系统理论</li><li>非线性系统理论</li><li>最优化方法</li></ul></div>
+  </div>
+
+  <h2>代表性教学成果 | Selected Teaching Achievements</h2>
+  <ul>
+    <li>山东省研究生优质课程《非线性系统理论》</li>
+    <li>山东省课程思政示范课程《常微分方程》</li>
+    <li>曲阜师范大学校级“金课堂”《常微分方程》</li>
+    <li>曲阜师范大学教学成果二等奖（首位）</li>
+    <li>全国高校数学微课程设计竞赛华东赛区一等奖、山东省一等奖</li>
+    <li>参与国家级一流本科课程《常微分方程》（排名4）</li>
+    <li>参与山东省教学成果奖一等奖（排名5）</li>
+  </ul>
+
+  <h2>学生培养 | Student Mentoring</h2>
+  <p>指导学生在全国大学生数学建模竞赛、全国研究生数学建模竞赛、全国大学生统计建模大赛以及师范生教学技能竞赛中获国家级、省级奖励多项；已指导硕士研究生完成复杂网络同步、多智能体系统、参数识别、输入约束最优控制和模糊神经网络等方向的学位论文。</p>
+</main>
+</body>
+</html>

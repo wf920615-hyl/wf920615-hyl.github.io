@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>会议简介 | 王飞 Fei Wang</title>
+<style>
+:root{--blue:#3f78ad;--blue2:#eaf4fc;--ink:#17324e;--muted:#63788b;--line:#dbe8f3;--bg:#f7fbff}
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:960px;margin:auto;padding:42px 22px 70px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:24px}.top a{text-decoration:none;color:var(--blue)}
+.card{background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 34px rgba(48,93,135,.08);padding:30px}
+.head{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center}.portrait{width:150px;height:190px;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+h1{font-size:34px;margin:0 0 8px}.role{font-size:18px;margin:0 0 8px}.school{color:var(--muted);margin:0}.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.links a{padding:8px 12px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--blue);background:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}.box{border-top:3px solid #9ec6e8;background:#fbfdff;border-radius:12px;padding:20px}.box h2{font-size:19px;margin:0 0 12px}.box p{line-height:1.82;margin:0;color:#354f67}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}button{border:0;border-radius:10px;padding:10px 14px;cursor:pointer;font-weight:650}.primary{background:var(--blue);color:#fff}.ghost{background:var(--blue2);color:var(--blue)}
+.qr{display:flex;gap:16px;align-items:center;margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}.qr img{width:108px;height:108px}.qr p{margin:0;color:var(--muted);line-height:1.7}
+.small{font-size:13px;color:var(--muted);margin-top:22px}
+@media(max-width:720px){.head{grid-template-columns:1fr;text-align:center}.portrait{margin:auto}.links{justify-content:center}.grid{grid-template-columns:1fr}.top{align-items:flex-start}.card{padding:22px}}
+@media print{body{background:#fff}.wrap{padding:0}.top,.actions{display:none}.card{box-shadow:none;border:0;padding:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="index.html">← 返回主页 / Home</a>
+    <a href="cv.html">学术简历 / Academic CV →</a>
+  </div>
+  <div class="card">
+    <div class="head">
+      <img class="portrait" src="portrait.png" alt="Fei Wang">
+      <div>
+        <h1>王飞 · Fei Wang</h1>
+        <p class="role">副教授 · 硕士生导师 | Associate Professor · Master Supervisor</p>
+        <p class="school">曲阜师范大学数学科学学院 · School of Mathematical Sciences, Qufu Normal University</p>
+        <div class="links">
+          <a href="mailto:fei_9206@qfnu.edu.cn">fei_9206@qfnu.edu.cn</a>
+          <a href="https://scholar.google.com/citations?user=Hgl_O2YAAAAJ&hl=zh-CN" target="_blank">Google Scholar ↗</a>
+          <a href="https://orcid.org/0000-0002-2952-4911" target="_blank">ORCID ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="box">
+        <h2>中文会议简介</h2>
+        <p id="zhbio">王飞，博士，曲阜师范大学数学科学学院副教授、硕士生导师。主要围绕网络系统动力学与控制开展研究，研究内容涉及复杂网络同步、多智能体一致性与编队、分布式优化、分数阶与反应扩散系统，以及强化学习与最优控制。先后主持中国博士后科学基金、山东省自然科学基金青年基金和面上项目、教育部重点实验室开放课题等科研项目，并参与国家自然科学基金面上项目等，在 IEEE Transactions on Automation Science and Engineering、IEEE Transactions on Control of Network Systems、International Journal of Robust and Nonlinear Control、Communications in Nonlinear Science and Numerical Simulation 等期刊发表系列研究成果。</p>
+        <div class="actions"><button class="primary" onclick="copyText('zhbio',this)">复制中文简介</button></div>
+      </section>
+
+      <section class="box">
+        <h2>English Conference Bio</h2>
+        <p id="enbio">Fei Wang is an Associate Professor and Master Supervisor at the School of Mathematical Sciences, Qufu Normal University, China. His research focuses on dynamics and control of networked systems, including complex-network synchronization, consensus and formation of multi-agent systems, distributed optimization, fractional-order and reaction-diffusion systems, and reinforcement learning and optimal control. He has led projects supported by the China Postdoctoral Science Foundation, the Natural Science Foundation of Shandong Province, and a Ministry of Education key laboratory, and has also participated in projects supported by the National Natural Science Foundation of China. His work has appeared in journals including IEEE Transactions on Automation Science and Engineering, IEEE Transactions on Control of Network Systems, International Journal of Robust and Nonlinear Control, and Communications in Nonlinear Science and Numerical Simulation.</p>
+        <div class="actions"><button class="primary" onclick="copyText('enbio',this)">Copy English Bio</button></div>
+      </section>
+    </div>
+
+    <div class="qr">
+      <img src="homepage_qr.png" alt="Homepage QR code">
+      <p><strong>个人主页 / Academic Homepage</strong><br>https://wf920615-hyl.github.io/</p>
+    </div>
+  </div>
+</div>
+<script>
+function copyText(id,btn){
+  const t=document.getElementById(id).innerText;
+  navigator.clipboard.writeText(t).then(()=>{
+    const old=btn.innerText; btn.innerText=id==='zhbio'?'已复制':'Copied';
+    setTimeout(()=>btn.innerText=old,1200);
+  });
+}
+</script>
+</body>
+</html>
